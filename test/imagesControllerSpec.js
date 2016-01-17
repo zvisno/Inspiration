@@ -11,11 +11,9 @@ describe('images', function () {
         var $scope = {};
         var controller = $controller('ImagesController', { $scope: $scope });
         $scope.imageUrl = 'url';
-        $scope.imageTag = 'tag';
         
         $scope.reset();
         
         expect($scope.imageUrl).toBeEmpty;
-        expect($scope.imageTag).toBeEmpty;       
     })
 });

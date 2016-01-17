@@ -1,11 +1,10 @@
 inspirationApp.controller('ImagesController', function($scope, LocalStorageFactory){
     $scope.reset = function() {
         $scope.imageUrl = "";
-        $scope.imageTag = "";
     }
     
-	$scope.saveImage = function(url, tag){
-        LocalStorageFactory.saveImage(url, tag);
+	$scope.saveImage = function(url){
+        LocalStorageFactory.saveImage(url);
     };
     
     $scope.listImages = function(){

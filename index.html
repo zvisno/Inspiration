@@ -28,16 +28,14 @@
             <form ng-controller='ImagesController'>
                 <label for="imageUrl">Image Url:</label>
                 <input id='imageUrl' name='imageUrl' ng-model='imageUrl' placeholder="Image address" required/>
-                <label for="imageTag">Tag:</label>
-                <input id='imageTag' name='imageTag' ng-model='imageTag' placeholder="Image tag" required/>
-                <button type="submit" class="btn btn-primary" ng-click='saveImage(imageUrl, imageTag)'>Add</button>
+                <button type="submit" class="btn btn-primary" ng-click='saveImage(imageUrl)'>Add</button>
                 <buttom type="reset" class="btn btn-primary" ng-click='reset()'>Reset</buttom>
             </form> 
         </div>
 
         <div ng-view></div>  
         <div class='footer'>
-            <span> MVP. Please do not forget that data you add are saved only in your browser. Tags are not used yet. Good luck. Implemented by <a href="https://github.com/zvisno">zvisno</a>. </span>
+            <span> MVP. Please do not forget that data you add are saved only in your browser. Good luck. Implemented by <a href="https://github.com/zvisno">zvisno</a>. </span>
         </div>    
 	</body>
 </html>
