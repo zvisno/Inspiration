@@ -4,7 +4,9 @@ inspirationApp.factory('LocalStorageFactory', ['$localStorage', function($localS
     };
     
     var saveImage = function(image){
-        $localStorage.images.push(image);
+        if (image){
+             $localStorage.images.push(image);
+        }
     };
     
     var initLocalStorage = function(){
