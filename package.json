@@ -5,7 +5,7 @@
     "npm": "2.1.x"
    },
   "scripts": {
-    "start": "http-server -a 0.0.0.0 -p 8000",
+    "start": "http-server",
     "test": "karma"
   },
   "license": "",
