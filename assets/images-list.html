@@ -1,0 +1,7 @@
+<div class='container' ng-controller='ImagesController' ng-init='init()'>
+    <div class="container-fluid">
+        <div class='image-container thumbnail' ng-repeat="(k,v) in listImages()">
+                <img class="crop" src="{{v[0]}}"/>            
+        </div>
+    </div>
+</div>
