@@ -4,8 +4,9 @@
   "engines": {
     "npm": "2.1.x"
    },
+  "main": "server.js",
   "scripts": {
-    "start": "http-server",
+    "start": "node server.js",
     "test": "karma"
   },
   "license": "",
@@ -13,7 +14,9 @@
     "angular": "^1.5.0-rc.0",
     "angular-route": "^1.5.0-rc.0",
     "ngstorage": "^0.3.6",
-    "angular-ui-bootstrap": "^0.12.0"
+    "angular-ui-bootstrap": "^0.12.0",
+    "ejs": "~1.0.0",
+    "express": "~4.9.8"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.8",
