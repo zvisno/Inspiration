@@ -7,7 +7,7 @@ describe('images', function () {
       $controller = _$controller_;
     }));
     
-    it("tests something", function(){
+    it("test reset form", function(){
         var $scope = {};
         var controller = $controller('ImagesController', { $scope: $scope });
         $scope.imageUrl = 'url';
