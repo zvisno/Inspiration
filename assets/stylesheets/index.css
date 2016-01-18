@@ -14,10 +14,15 @@ header {
 }
 
 form {
+    display: inline-block;
     background-color: white;
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.alert {
+    display: inline-block;
 }
 
 .footer {

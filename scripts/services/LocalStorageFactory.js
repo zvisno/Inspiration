@@ -5,7 +5,13 @@ inspirationApp.factory('LocalStorageFactory', ['$localStorage', function($localS
     
     var saveImage = function(image){
         if (image){
-             $localStorage.images.push(image);
+            var exists = getImages().indexOf(image);
+            if (exists === -1){
+                $localStorage.images.push(image);
+                return true
+            }else{
+                return false
+            }
         }
     };
     
