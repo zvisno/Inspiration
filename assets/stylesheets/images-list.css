@@ -12,7 +12,7 @@
   height: 300px;
   overflow: hidden;
   margin-right: 5px;
-  border: 0;
+  border: none;
 }
 
 .thumbnail img {
